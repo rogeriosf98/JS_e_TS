@@ -11,6 +11,9 @@ const alunos = ['Luiz', 'Maria', 'João']; // Luiza, Eduardo
 // alunos.push('Eduardo');
 
 // console.log(alunos.slice(0, -2)); MESMO FATIAMENTO DE STRINGS, DO 0 AO 3, CORTA ATÉ O DOIS. 0 A -2, ELIMINA OS DOIS ULTIMOS.
+// para guardar e exibir esses produtos fatiados
+// const alunosEscolhidos = alunos,slice(0, 6);
+// console.log(alunosEscolhidos);
 
 // console.log(alunos[50]); ASSIM DA UNDEFINED
 
