@@ -16,3 +16,9 @@ const [um, dois, tres, ...resto] = numeros; // ... mostra o restante rest operat
 console.log(um, dois, tres);
 console.log(resto);
 // ...rest, ...spread. Um para o resto, outro para espalhamento
+
+
+//                   1         2         3
+//                0  1  2   3  4  5   6  7  8            
+const numero = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+console.log(numero[1][2]); // assim exibe o 6.
