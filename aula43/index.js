@@ -8,13 +8,14 @@ Checar se o número é realmente um número
 Use a função com números de 0 a 100
 */
 
-function fizzbuzz(numero) {
+function fizzBuzz(numero) {
 
     // Verifica se o valor é número válido
     if (typeof numero !== 'number' || Number.isNaN(numero)) {
         return 'Numero inválido';}
     
     // verifica se é divisível por 3 e por 5
+    // Para saber se é divisível, é pelo resto da divisão
     if (numero % 3 === 0 && numero % 5 === 0) {
         return 'FizzBuzz';
     }
@@ -34,5 +35,5 @@ function fizzbuzz(numero) {
 }
     // Teste a funçãp com números de 0 a 100
 for (let i = 0; i <= 100; i++) {
-    console.log(i, fizzbuzz(i));
+    console.log(i, fizzBuzz(i));
 }
