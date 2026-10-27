@@ -25,12 +25,14 @@ function iniciaRelogio() {
 }
 // abaixo, adicionando evento do click para iniciar
 iniciar.addEventListener('click', function(event) {
+    relogio.classList.remove('pausado'); // remove o vermelho quando inicia
     clearInterval(timer);
     iniciaRelogio();
 });
 
-pausar.addEventListener('click', function(event) {
-  clearInterval(timer);
+pausar.addEventListener('click', function(event) { 
+    clearInterval(timer);
+    relogio.classList.add('pausado'); // add o color red quando pausado
 });
 
 zerar.addEventListener('click', function(event) {

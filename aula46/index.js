@@ -32,3 +32,4 @@ setTimeout(function() {
 setTimeout(function() {
     console.log('Olá mundo');
 }, 5000);
+
