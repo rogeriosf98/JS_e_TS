@@ -56,9 +56,9 @@ document.addEventListener('click', function(e) {
     salvarTarefas();
   }
 });
-
+// *8
 function salvarTarefas() {
-  const liTarefas = tarefas.querySelectorAll('li');
+  const liTarefas = tarefas.querySelectorAll('li'); // pegar li dentro das tarefas (ul)
   const listaDeTarefas = [];
 
   for (let tarefa of liTarefas) {
