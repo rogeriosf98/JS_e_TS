@@ -44,3 +44,28 @@ funcaoTres({
 
 // perceba que náo é mecessário a criação parametro usuário, já desconstroi ele com os argumentos,
 // que viram os parâmetros do objeto. 
+
+// agora desestruturação em array
+
+function funcaoQuatro ([valor1, valor2, valor3]) {
+    console.log(valor1, valor2, valor3);
+}
+
+funcaoQuatro(['Rogério Silva', 'Ferreira', 27]);
+
+// no operador envia algum operador matemático ( + - * /)
+// no acumulador mando um valor inicial para fazer uma acumulação
+// numeros com rest operator (...), ou seja, todo o resto depois do acumulador, vai para dentro do array
+// no terminal fica visivel
+
+function conta(operador, acumulador, ...numeros) { // rest sempre no ultimo parametro, se nao da erro
+    for(let numero of numeros) { // let of, voce quer os valores de numeros, numero de numeros
+      if (operador === '+') acumulador += numero;
+      if (operador === '-') acumulador -= numero;
+      if (operador === '/') acumulador /= numero;
+      if (operador === '*') acumulador *= numero;
+    }
+    console.log(acumulador);
+}
+
+conta('+', 0, 20, 30, 40, 50); // só alterar o operador, que muda a conta 
