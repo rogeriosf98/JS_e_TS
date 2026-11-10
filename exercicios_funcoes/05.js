@@ -13,4 +13,4 @@ function celciusParaFahrenheit(temp) {
     return (temp * 1.8) + 32;
 }
 
-console.log(celciusParaFahrenheit(30));
+console.log(celciusParaFahrenheit(100));
