@@ -9,7 +9,7 @@ console.log(rand());
 
 // Mas como fazer agora para exibir na ordem, sendo que é de forma randomica? 
 // Atribuindo callback no atributo
-
+// o settimeout seria para simular atrasos possivels na web
 function f1(callback) {
     setTimeout(function() {
     console.log('f1');
